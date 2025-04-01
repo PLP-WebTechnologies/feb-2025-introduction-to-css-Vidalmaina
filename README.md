@@ -27,52 +27,62 @@ Margins, paddings, and borders.
  - Improve readability and aesthetics.
 
 Happy Coding! 💻✨
-/* 1. Style the body */
+/* Style for body */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif; /* Different font */
+    background-color: #f4f4f4; /* Light background color */
     margin: 0;
-    padding: 0;
-    text-align: center;
+    padding: 20px;
 }
 
-/* 2. Style headers using a class */
-.header {
-    font-size: 24px;
-    color: #007BFF;
-    margin-bottom: 20px;
+/* Style for all headings */
+h1, h2, h3 {
+    color: #333; /* Dark color for headings */
 }
 
-/* 3. Style paragraphs using an ID */
-#intro-text {
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 20px auto;
-    width: 80%;
+/* Class selector for paragraph styling */
+.text-highlight {
+    color: #007BFF; /* Blue color for highlighted text */
+    margin-bottom: 15px; /* Adds space below highlighted text */
 }
 
-/* 4. Style an image */
-img {
-    width: 300px;
-    border: 5px solid #007BFF;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 5px;
-    background-color: #fff;
+/* ID selector for styling the image */
+#featured-image {
+    border: 5px solid #ccc; /* Light gray border */
+    padding: 10px; /* Space inside the border */
+    margin-top: 20px; /* Space above the image */
+    width: 100%; /* Make image responsive */
+    max-width: 600px; /* Maximum width */
 }
 
-/* 5. Button styling */
-.button {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+/* Style for the container */
+.container {
+    background-color: white; /* White background for the container */
+    padding: 20px; /* Space inside the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.button:hover {
-    background-color: #218838;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to CSS!</h1>
+        <h2>Applying Styles</h2>
+        <p class="text-highlight">This paragraph is styled using a class selector to highlight text in blue.</p>
+        <p>CSS allows you to style your web pages, making them more attractive and readable.</p>
+        
+        <h3>Here is an example of an image:</h3>
+        <img id="featured-image" src="https://via.placeholder.com/600" alt="Sample Image">
+        
+        <h3>More about CSS</h3>
+        <p>Utilizing CSS effectively can improve the aesthetics and functionality of your website significantly.</p>
+    </div>
+</body>
+</html>
